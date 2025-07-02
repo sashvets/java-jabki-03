@@ -23,7 +23,7 @@ public class HomeWork {
         int[] arr = {-1, 4, 5, 6, 7, 667, 77};
         System.out.println("Максимальное число из массива: " + findMax(arr));
         int n = 4;
-        System.out.printf("Факториал %s = %s%s", n, factorial(n), System.lineSeparator());
+        System.out.printf("Факториал %s = %s%s", n, getFactorial(n), System.lineSeparator());
         double radius = 2;
         System.out.printf("Площадь круга радиусом %.2f равна %.2f%s", radius, calculateArea(radius), System.lineSeparator());
         double length = 5;
@@ -35,7 +35,7 @@ public class HomeWork {
         System.out.printf("Среднее арифметическое чисел %s, %s %s равно %.2f%s", numA, numB, numC, arithmeticMean(numA, numB, numC), System.lineSeparator());
         double legA = 33.33;
         double legB = 11.33;
-        System.out.printf("Гипотенуза прямого треугольника со сторонами %.2f и %.2f равна %.2f%s", legA, legB, hypotenuse(legA, legB), System.lineSeparator());
+        System.out.printf("Гипотенуза прямого треугольника со сторонами %.2f и %.2f равна %.2f%s", legA, legB, getHypotenuse(legA, legB), System.lineSeparator());
 
     }
 
@@ -75,7 +75,7 @@ public class HomeWork {
     }
 
     // 4. Напишите метод, вычисляющий факториал числа с помощью цикла for
-    static Integer factorial(int n) {
+    static Integer getFactorial(int n) {
         int fact = 1;
         if (n <= 0) {
             return null;
@@ -109,7 +109,7 @@ public class HomeWork {
     }
 
     // 7. Напишите метод, который принимает два числа, представляющие длины катетов, и возвращает длину гипотенузы (используйте теорему Пифагора).
-    static double hypotenuse(double legA, double legB) {
+    static double getHypotenuse(double legA, double legB) {
         return Math.sqrt(Math.pow(legA, 2) + Math.pow(legB, 2));
     }
 }
