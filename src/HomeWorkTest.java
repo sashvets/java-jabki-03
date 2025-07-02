@@ -58,7 +58,7 @@ class HomeWorkTest {
 
     // 7.
     @Test
-    public void testGethypotenuse() {
+    public void testGetHypotenuse() {
         Assertions.assertEquals(Math.sqrt(Math.pow(2, 2) + Math.pow(5, 2)), HomeWork.getHypotenuse(2, 5));
     }
 }
