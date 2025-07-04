@@ -110,7 +110,7 @@ public class HomeWork {
 
     // 7. Напишите метод, который принимает два числа, представляющие длины катетов, и возвращает длину гипотенузы (используйте теорему Пифагора).
     static double getHypotenuse(double legA, double legB) {
-        if (legA<0 || legB < 0) {
+        if (legA < 0 || legB < 0) {
             return 0;
         }
         return Math.sqrt(Math.pow(legA, 2) + Math.pow(legB, 2));
